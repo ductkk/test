@@ -11,7 +11,7 @@
     <body>
         <h1>포켓몬도감</h1>
         <h1>&#129430;</h1>
-        <p>피카츄,파이리,꼬부기를 구별해서 이에 대한설명을 보여주는 웹 앱</p>
+        <p>피카츄,파이리,꼬부기를 구별해서 이에 대한설명을 보여주는 웹</p>
         <button type="button" onclick="init()">Start</button>
         <button type="button" onclick="predict()">Predict</button>
         <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -81,11 +81,11 @@
                     labelContainer.childNodes[1].innerHTML = "피카츄는 포켓몬스터에 등장하는 가상의 생명체 입니다. 지우의 첫 포켓몬이자 파트너 이죠."
                     // }
                 }
-                else if (prediction[0].probability > 0.7) {
+                else if (prediction[1].probability > 0.7) {
                     labelContainer.childNodes[0].innerHTML = "파이리입니다."
                     labelContainer.childNodes[1].innerHTML = "파이리는 포켓몬스터에 등장하는 가상의 생명체 입니다. 파이리는 불을 뜻하는 영어 파이어와 꼬리를 뜻하는 테일이 합쳐진 이름입니다"
                 }
-                else if (prediction[0].probability > 0.7) {
+                else if (prediction[2].probability > 0.7) {
                     labelContainer.childNodes[0].innerHTML = "꼬부기입니다."
                     labelContainer.childNodes[1].innerHTML = "꼬부기는 포켓몬스터에 등장하는 가상의 생명체 입니다. 지우의 첫 포켓몬이자 파트너 이죠."
                 }
